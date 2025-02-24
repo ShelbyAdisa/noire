@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Noire Luxe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+        }
+
+        .header-logo a {
+            text-decoration: none;
+            color: pink;
+        }
+
+        .header-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: pink;
+        }
+
+        /* Full-screen section styling */
+        .section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        /* Content Bubble */
+        .content-bubble {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content-bubble h1 {
+            font-size: 2.5rem;
+            color: pink;
+            margin-bottom: 1rem;
+        }
+
+        .content-bubble p {
+            font-size: 1.2rem;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Background Images */
+        .story { background-image: url('resources/drawings.png'); }
+        .craftsmanship { background-image: url('resources/designer.png'); }
+        .luxury { background-image: url('resources/classy.jpg'); }
+        .vision { background-image: url('resources/hut.jpeg'); }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-item">
+            <span class="icon">&#x1F4CD;</span>
+        </div>
+        <div class="header-logo">
+            <a href="home.html">NOIRE LUXE</a>
+        </div>       
+        <div class="header-item">
+            <span class="icon">&#x1F464;</span>
+            <span>Login</span>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="home.html">New In</a>
+        <a href="jewelry.html">Jewelry</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="bags.html">Bags</a>
+        <a href="fragrances.html">Fragrance</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="about.html">World of Noire Luxe</a>
+        <a href="contact.html">Reach out to us</a>        
+    </nav>
+
+    <div class="section story">
+        <div class="content-bubble">
+            <h1>Our Story</h1>
+            <p>Noire Luxe was born from the desire to blend <b>timeless elegance</b> with <b>modern sophistication</b>. Our journey began with a vision: to create luxurious pieces that <b>empower and inspire</b>.</p>
+        </div>
+    </div>
+
+    <div class="section craftsmanship">
+        <div class="content-bubble">
+            <h1>Unparalleled Craftsmanship</h1>
+            <p>Each piece in our collection is meticulously crafted using <b>only the finest materials</b>. From exquisite jewelry to hand-stitched leather goods, <b>quality</b> is at the heart of everything we do.</p>
+        </div>
+    </div>
+
+    <div class="section luxury">
+        <div class="content-bubble">
+            <h1>The Essence of Luxury</h1>
+            <p>We believe luxury is not just about what you wear, but how it makes you <b>feel</b>. Every scent, fabric, and detail is curated to bring a sense of <b>exclusivity</b> and <b>refinement</b>.</p>
+        </div>
+    </div>
+
+    <div class="section vision">
+        <div class="content-bubble">
+            <h1>Our Vision</h1>
+            <p>To redefine modern luxury by <b>fusing innovation with tradition</b>. Our collaborations, including our partnership with <b>Armani</b>, reflect our commitment to <b>excellence</b> and cultural awareness.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noire Skin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+            .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: black;
+        }
+
+        .header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: pink;
+        }
+
+        /* Navigation Menu */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: pink;
+        }
+
+        /* Search Button */
+        .search-btn {
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #4a4a4a;
+        }
+
+        .search-btn:hover {
+            color: hotpink;
+        }
+
+        /* Hero Section */
+        /* a large, prominent banner at the top of a webpage */
+        .hero {
+            position: relative;
+        }
+
+        .head-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1.5rem;
+            max-width: 50%;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: white;
+        }
+
+        .hero p {
+            color: black;
+        }
+
+        /* Product Grid Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        /* Product Card */
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            background: #1A1A1D;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 100%; /* Ensures the image fills the container */
+            height: 250px; /* Fixed height to make them square */
+            object-fit: cover; /* Ensures the image is cropped rather than stretched */
+            border-radius: 5px; /*adds a slight rounded corner */
+}
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: white;
+        }
+
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: black;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-item">
+            <span class="icon">&#x1F4CD;</span>
+        </div>
+        <div class="header-logo">
+            <a href="home.html" style="text-decoration: none; color: pink;">NOIRE LUXE</a>
+        </div>        
+        <div class="header-item">
+            <span class="icon">&#x1F464;</span>
+            <span>Login</span>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="home.html">New In</a>
+        <a href="jewelry.html">Jewelry</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="bags.html">Bags</a>
+        <a href="fragrances.html">Fragrance</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="about.html">World of Noire Luxe</a>
+        <a href="contact.html">Reach out to us</a>
+        
+    </nav>
+
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="resources/skincarehero.jpg" alt="Luxurious skincare products with a serene backdrop" class="head-image">
+            <div class="hero-content">
+                <p class="breadcrumb">Home / Skincare</p>
+                <h1>Skincare: Radiance, Elegance, Perfection</h1>
+                <p>Transform your routine with Noire Luxe skincare. Indulge in meticulously crafted formulations designed to rejuvenate, hydrate, and illuminate your skin. Elevate your beauty ritual with luxurious essentials that embody timeless sophistication.</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <a href="product pages/Skincare/aloe-invisible-sunscreen.html" class="product">
+                <img src="resources/Aloe-Invisible-Sunscreen2-1080x1080.jpg" alt="pearls and diamonds">
+                <p class="product-title">Aloe Invisible Sunscreen - 80ml</p>
+                <p class="product-desc"> Hydrating + No White Cast</p>
+            </a>
+            
+
+            <!-- Product 2 -->
+            <a href="product pages/Skincare/green-tea-revitalising-cleanser.html" class="product">
+                <img src="resources/Green-Tea-Rejuvenating-Cleanser2-1080x1080.jpg" alt="Tennis Necklace">
+                <p class="product-title">Green Tea Revitalising Cleanser - 120ml</p>
+                <p class="product-desc">Detoxofies + Soothes</p>
+            </a>
+
+            <!-- Product 3 -->
+            <a href="product pages/Skincare/ArganHydrating.html" class="product">
+                <img src="resources/Argan-Hydrating-Moisturiser2-1080x1080.jpg" alt="heart bracelet">
+                <p class="product-title">Argan Hydrating Moisturiser - 100ml</p>
+                <p class="product-desc">Lighweight + Nourishing</p>
+            </a>
+
+            <!-- Product 4 -->
+            <a href="product pages/Skincare/Baobab.html" class="product">
+                <img src="resources/Baobab-Glow-C-Serum2-1080x1080.jpg" alt="Beautifical">
+                <p class="product-title">Baobab Glow C Serum (Vitamin C) - 30ml</p>
+                <p class="product-desc">Brightens + Evens</p>
+            </a>
+
+            <!-- Product 5 -->
+            <a href="product pages/Skincare/Rooibos.html" class="product">
+                <img src="resources/Rooibos-Toner-100-jpg.webp" alt="Stacking Ring Set">
+                <p class="product-title">Rooibos Glow Toner - 125ml</p>
+                <p class="product-desc">Rebalances + Gently Exfoliates</p>
+            </a>
+
+            <!-- Product 6 -->
+            <a href="product pages/Skincare/Blemish.html" class="product">
+                <img src="resources/Green-Tea-Blemish-COntrol-Serum-2-1080x1080.jpg" alt="Luxury Bangle">
+                <p class="product-title">Green Tea Blemish Control Serum (Acne Control)</p>
+                <p class="product-desc"> Reduces Breakouts + Refines Pores</p>
+            </a>
+             <!-- Product 7 -->
+             <a href="product pages/Skincare/Licorice.html" class="product">
+                <img src="resources/dark-spot-corrector-serum.webp" alt="My Way Intense Eau de Parfum">
+                <p class="product-title">Licorice Root Dark Spot Serum</p>
+                <p class="product-desc">Brightens + Evens Skin Tone</p>         
+            </a>
+                <!-- Product 8 -->
+                <a href="product pages/Skincare/mask.html" class="product">
+                    <img src="resources/I-am-beau-tea-ful-Green-Tea-Detoxifying-Sheet-Mask-3pcs-100-jpg.webp" alt="Sì Passione Eau de Parfum">
+                    <p class="product-title">I Am Beautiful Green Tea Sheet Mask</p>
+                    <p class="product-desc">Detoxifies + Hydrates</p>
+                </a>
+        </div>                
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2025 Noir Luxe. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+

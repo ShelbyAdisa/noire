@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Noire Luxe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+        }
+
+        .header-logo a {
+            text-decoration: none;
+            color: pink;
+        }
+
+        .header-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: pink;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 2rem;
+            background-image: url('resources/contact-bg.jpg'); /* Adds a luxe background */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .contact-section h1 {
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0px 4px 10px rgba(255, 192, 203, 0.2);
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #777;
+            background: transparent;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .contact-form input:focus, 
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: pink;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background: pink;
+            border: none;
+            color: black;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: white;
+            color: black;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-item">
+            <span class="icon">&#x1F4CD;</span>
+        </div>
+        <div class="header-logo">
+            <a href="home.html" style="text-decoration: none; color: pink;">NOIRE LUXE</a>
+        </div>               
+        <div class="header-item">
+            <span class="icon">&#x1F464;</span>
+            <span>Login</span>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="home.html">New In</a>
+        <a href="jewelry.html">Jewelry</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="bags.html">Bags</a>
+        <a href="fragrances.html">Fragrance</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="about.html">World of Noire Luxe</a>
+        <a href="contact.html">Reach out to us</a>        
+    </nav>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Reach out to us for any inquiries or assistance.</p>
+        
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        &copy; 2025 Noire Luxe. All Rights Reserved.
+    </footer>
+</body>
+</html>

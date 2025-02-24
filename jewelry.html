@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noire Jewelry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+            .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: black;
+        }
+
+        .header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: pink;
+        }
+
+        /* Navigation Menu */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: pink;
+        }
+
+        /* Search Button */
+        .search-btn {
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #4a4a4a;
+        }
+
+        .search-btn:hover {
+            color: hotpink;
+        }
+
+        /* Hero Section */
+        /* a large, prominent banner at the top of a webpage */
+        .hero {
+            position: relative;
+        }
+
+        .head-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1.5rem;
+            max-width: 50%;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: white;
+        }
+
+        .hero p {
+            color: black;
+        }
+
+        /* Product Grid Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        /* Product Card */
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            background: #1A1A1D;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 100%; /* Ensures the image fills the container */
+            height: 250px; /* Fixed height to make them square */
+            object-fit: cover; /* Ensures the image is cropped rather than stretched */
+            border-radius: 5px; /* adds a slight rounded corner */
+}
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: white;
+        }
+
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: black;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-item">
+            <span class="icon">&#x1F4CD;</span>
+        </div>
+        <div class="header-logo">
+            <a href="home.html" style="text-decoration: none; color: pink;">NOIRE LUXE</a>
+        </div>        
+        <div class="header-item">
+            <span class="icon">&#x1F464;</span>
+            <span>Login</span>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="home.html">New In</a>
+        <a href="jewelry.html">Jewelry</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="bags.html">Bags</a>
+        <a href="fragrances.html">Fragrance</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="about.html">World of Noire Luxe</a>
+        <a href="contact.html">Reach out to us</a>
+        
+    </nav>
+
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="resources/header.png" alt="Close-up of a model wearing Noir Luxe jewelry" class="head-image">
+            <div class="hero-content">
+                <p class="breadcrumb">Home / Jewelry</p>
+                <h1>Jewelry: Earrings, Bracelets, Necklaces and Rings</h1>
+                <p>Looking for wear-forever fashion jewelry? You've come to the right place. Expect necklaces, earrings, rings, and everything in-between with crystal designs that make a unique statement, day or night.</p>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <a href="product pages/Jewelry/LanaxNoireLuxe.html" class="product">
+                <img src="resources/pearlndia.png" alt="pearls and diamonds">
+                <p class="product-title">Lana x Noire Luxe</p>
+                <p class="product-desc">Mixed cuts, Heart, White, Rhodium plated</p>
+            </a>
+            
+
+            <!-- Product 2 -->
+            <a href="product pages/Jewelry/Una Angelic.html" class="product">
+                <img src="resources/tennis necklace.png" alt="Tennis Necklace">
+                <p class="product-title">Una Angelic Tennis Necklace</p>
+                <p class="product-desc">Round cut, White, Gold-tone plated</p>
+            </a>
+
+            <!-- Product 3 -->
+            <a href="product pages/Jewelry/HeartBracelet.html" class="product">
+                <img src="resources/rhodium.png" alt="heart bracelet">
+                <p class="product-title">Heart Bracelet</p>
+                <p class="product-desc">heart-cut, Silver-tone plated</p>
+            </a>
+
+            <!-- Product 4 -->
+            <a href="product pages/Jewelry/Tennis Bracelet.html" class="product">
+                <img src="resources/pink rhodium.png" alt="Tennis Bracelet">
+                <p class="product-title">Tennis Bracelet</p>
+                <p class="product-desc">Rose Gold, White Crystal</p>
+            </a>
+
+            <!-- Product 5 -->
+            <a href="product pages/Jewelry/Earring Set.html" class="product">
+                <img src="resources/d.earring.jpg" alt="Stacking Ring Set">
+                <p class="product-title">Diamond Earring Set</p>
+                <p class="product-desc">Cubic Zirconia, Clear-tone</p>
+            </a>
+
+            <!-- Product 6 -->
+            <a href="product pages/Jewelry/Pearls.html" class="product">
+                <img src="resources/louipearl.png" alt="Luxury Bangle">
+                <p class="product-title">Pearl Earrings</p>
+                <p class="product-desc"> White Pearl, Diamond-set </p>
+            </a>
+             <!-- Product 7 -->
+             <a href="product pages/Jewelry/HeartRing.html" class="product">
+                <img src="resources/p.ring.jpg" alt="Luxury Bangle">
+                <p class="product-title">Heart Ring</p>
+                <p class="product-desc">Pavé setting, Silver-tone plated, Pink diamond</p>
+             </a>
+                <!-- Product 8 -->
+                <a href="product pages/Jewelry/PinkRing.html" class="product">
+                    <img src="resources/pinkring.png" alt="ring">
+                    <p class="product-title">Luxury Crystal Ring</p>
+                    <p class="product-desc">Pavé setting, Silver-tone plated</p>
+                </a>
+        <!-- Product 9 -->
+        <a href="product pages/Jewelry/DiamondBears.html" class="product">
+            <img src="resources/set1.jpeg" alt="gift set 1">
+            <p class="product-title">Diamond Chain Gift set</p>
+            <p class="product-desc">Pavé setting, Silver-tone plated, rosy diamonds</p>
+        </a>
+        <!-- Product 10 -->
+        <a href="product pages/Jewelry/Celestial.html" class="product">
+            <img src="resources/set2.png" alt="gift set 2">
+            <p class="product-title">Celestial Spark Gift Set</p>
+            <p class="product-desc">Pavé setting, Silver-tone plated</p>
+        </a>
+        <!-- Product 11 -->
+        <a href="product pages/Jewelry/Dusk.html" class="product">
+            <img src="resources/set3.png" alt="gift set 3">
+            <p class="product-title">Diamond Dusk Collection</p>
+            <p class="product-desc">Pavé setting, Silver-tone plated</p>
+        </a>
+        <!-- Product 12 -->
+        <a href="product pages/Jewelry/Glow.html" class="product">
+            <img src="resources/set4.png" alt="gift set 4">
+            <p class="product-title">Gilded Glow Gift Set</p>
+            <p class="product-desc">Pavé setting, Silver-tone plated</p>
+        </a>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2025 Noir Luxe. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+

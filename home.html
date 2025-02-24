@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noire Luxe</title>
+    <body>
+    <header class="header">
+        <div class="header-item">
+            <span class="icon">&#x1F4CD;</span>
+        </div>
+        <div class="header-logo">
+            <a href="home.html" style="text-decoration: none; color: pink;">NOIRE LUXE</a>
+        </div>               
+        <div class="header-item">
+            <span class="icon">&#x1F464;</span>
+            <span>Login</span>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="home.html">New In</a>
+        <a href="jewelry.html">Jewelry</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="bags.html">Bags</a>
+        <a href="fragrances.html">Fragrance</a>
+        <a href="skincare.html">Skincare</a>
+        <a href="about.html">World of Noire Luxe</a>
+        <a href="contact.html">Reach out to us</a>
+        
+    </nav>
+    <main class="main">
+        <img src="resources/jewelry.png"
+             alt="Lana x Noire Luxe"
+             class="main-image">
+        <div class="overlay">
+            <h1>Lana x Noire Luxe</h1>
+            <h2>Collection</h2>
+            
+            <p>Old Hollywood enters a shining new era</p>
+            <button class="btn">Discover more</button>
+        </div>
+    </main>
+</body>
+</html>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: pink;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: pink;
+}
+
+.main {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    text-align: left;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+.logo {
+    max-width: 40%; 
+    height: auto;
+}
+
+</style>

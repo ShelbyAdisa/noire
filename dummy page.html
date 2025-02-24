@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarovski</title>
+    <body>
+    <header class="header">
+        <div class="header-item">
+            <span class="icon">&#x1F4CD;</span>
+            <span>Stores</span>
+        </div>
+        <div class="header-logo">NOIRE LUXE</div>
+        <div class="header-item">
+            <span class="icon">&#x1F464;</span>
+            <span>Login</span>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="home.html">New In</a>
+        <a href="jewelry2.html">Jewelry</a>
+        <a href="#">Shoes</a>
+        <a href="#">Bags</a>                                                                              
+        <a href="#">Fragrance</a>
+        <a href="#">Skincare</a>
+        <a href="#">Makeup</a>
+        <a href="#">World of Noire Luxe</a>
+        <a href="#">Reach out to us</a>
+         </nav>
+    <main>
+        <div class="head">
+            <img src="header img.jpg" alt="Close-up of a model wearing Noire Luxe jewelry" class="head-image">
+            <div class="head-content">
+                <p class="breadcrumb">Home / Jewelry</p>
+                <h1>Jewelry: Earrings, Bracelets, Necklaces and Rings</h1>
+                <p>Looking for wear-forever fashion jewelry? You've come to the right place. Expect necklaces, earrings, rings, and everything in-between with crystal designs that make a unique statement, day or night.</p>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src=rhodium.  alt="Tennis Bracelet">
+                <p class="product-title">Ariana Grande x Swarovski Tennis Bracelet</p>
+                <p class="product-desc">Mixed cuts, Heart, White, Rhodium plated</p>
+            </div>
+            <div class="product">
+                <img src="https://storage.googleapis.com/a1aa/image/RGfoY4fBgFtwAk90rqeBqqIDKD_47OEh-q1oTG7790Q.jpg" alt="Tennis Necklace">
+                <p class="product-title">Una Angelic Tennis Necklace</p>
+                <p class="product-desc">Round cut, White, Gold-tone plated</p>
+            </div>
+    </main>
+</body>
+</html>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: pink;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: pink;
+}
+
+.main {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+    text-align: left;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+.product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: #777;
+        }
+</style>
