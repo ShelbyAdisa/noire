@@ -4,8 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eau de Parfum MY WAY INTENSE 90 ml - Noire Luxe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
             font-family: 'Roboto', sans-serif;
             background-color: black;
@@ -24,6 +30,8 @@
         .header-logo {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
+            text-align: center;
+            margin: 0 auto;
         }
 
         .header-logo a {
@@ -31,15 +39,10 @@
             color: pink;
         }
 
-        .header-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
         .nav {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 1rem;
             background-color: #333;
             padding: 1rem;
@@ -48,33 +51,55 @@
         .nav a {
             color: white;
             text-decoration: none;
+            padding: 0.5rem;
         }
 
         .nav a:hover {
             color: pink;
         }
 
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
         .product-container {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: flex-start;
-            padding: 4rem 2rem;
-            gap: 4rem;
+            padding: 2rem 1rem;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 280px;
         }
 
         .product-image img {
-            max-width: 650px;
+            width: 100%;
+            height: auto;
             border-radius: 12px;
+            display: block;
         }
 
         .product-details {
-            max-width: 500px;
+            flex: 1;
+            min-width: 280px;
         }
 
         .product-title {
             font-size: 2.5rem;
             font-weight: bold;
             text-transform: uppercase;
+            margin-bottom: 1rem;
         }
 
         .product-description {
@@ -104,6 +129,7 @@
             transition: 0.3s ease-in-out;
             text-transform: uppercase;
             font-weight: bold;
+            margin-top: 1.5rem;
         }
 
         .contact-btn:hover {
@@ -112,20 +138,67 @@
             border-color: white;
         }
 
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .product-image, .product-details {
+                max-width: 100%;
+            }
+            
+            .product-title {
+                font-size: 2rem;
+                text-align: center;
+            }
+            
+            .nav {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header-logo {
+                font-size: 1.5rem;
+            }
+            
+            .product-title {
+                font-size: 1.5rem;
+            }
+            
+            .product-description {
+                font-size: 1rem;
+            }
+            
+            .luxury-text {
+                font-size: 0.9rem;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="header-item">
-            <span class="icon">&#x1F4CD;</span>
-        </div>
         <div class="header-logo">
             <a href="home.html">NOIRE LUXE</a>
         </div>       
-        <div class="header-item">
-            <span class="icon">&#x1F464;</span>
-            <span>Login</span>
-        </div>
+        <button class="mobile-menu-btn">☰</button>
     </header>
 
     <nav class="nav">
@@ -175,5 +248,28 @@
             <a href="../../../contact.html" class="contact-btn">Contact Us</a>
         </div>
     </main>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+
+        // Hide menu when clicking a link (for mobile)
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    document.querySelector('.nav').classList.remove('active');
+                }
+            });
+        });
+
+        // Adjust menu visibility on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                document.querySelector('.nav').classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
